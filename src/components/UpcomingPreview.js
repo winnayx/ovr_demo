@@ -1,4 +1,4 @@
-import { CardColumns, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import basquiatEx from "../assets/basquiat-ex1.jpg";
 
 const UpcomingPreview = () => {
