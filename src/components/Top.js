@@ -2,7 +2,11 @@ import { Navbar, Nav } from "react-bootstrap";
 
 const Top = () => {
   return (
-    <Navbar className="justify-content-around" bg="light" fixed="top">
+    <Navbar
+      className="justify-content-around"
+      style={{ background: "white" }}
+      fixed="top"
+    >
       <Navbar.Brand href="#home">GALLERY NAME</Navbar.Brand>
       <Nav>
         <Nav.Link href="#home">Artists</Nav.Link>

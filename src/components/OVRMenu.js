@@ -1,8 +1,10 @@
+import "./Top.css";
 import { ListGroup, Button } from "react-bootstrap";
 
-const OVRMenu = () => {
+const OVRMenu = ({ setVr }) => {
   return (
     <div
+      className="position-fixed"
       style={{
         minHeight: "80vh",
         paddingTop: "80px",
@@ -15,14 +17,28 @@ const OVRMenu = () => {
         Viewing Room
       </h3>
       <ListGroup variant="flush">
-        <ListGroup.Item>Current Viewing Rooms</ListGroup.Item>
-        <ListGroup.Item>Upcoming Viewing Rooms</ListGroup.Item>
-        <ListGroup.Item>Past Viewing Rooms</ListGroup.Item>
+        <ListGroup.Item
+          onClick={() => setVr("current")}
+          style={{ backgroundColor: "#eceef0", cursor: "pointer" }}
+        >
+          Current Viewing Rooms
+        </ListGroup.Item>
+        <ListGroup.Item
+          onClick={() => setVr("upcoming")}
+          style={{ backgroundColor: "#eceef0", cursor: "pointer" }}
+        >
+          Upcoming Viewing Rooms
+        </ListGroup.Item>
+        <ListGroup.Item
+          style={{ backgroundColor: "#eceef0", cursor: "pointer" }}
+        >
+          Past Viewing Rooms
+        </ListGroup.Item>
       </ListGroup>
       <small style={{ margin: "20px 0" }}>
         Sign up to be notified of new OVRs.
       </small>
-      <Button>Subscribe</Button>
+      <Button variant="outline-info">Subscribe</Button>
     </div>
   );
 };

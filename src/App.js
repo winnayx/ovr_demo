@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div className="ovr-demo">
       <Top />
-      <Row className="mt-5 pt-5 px-5">
+      <Row className="px-3" style={{ marginTop: "56px" }}>
         <Content />
       </Row>
     </div>

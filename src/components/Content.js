@@ -1,16 +1,23 @@
+import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import OVRMenu from "./OVRMenu.js";
-import OVRPreview from "./OVRPreview.js";
+import CurrentPreview from "./CurrentPreview.js";
+import UpcomingPreview from "./UpcomingPreview.js";
 
 const Content = () => {
+  const [vr, setVr] = useState("current");
   return (
-    <Container>
+    <Container className="p-0">
       <Row>
-        <Col className="px-0" style={{ backgroundColor: "#eceef0" }}>
-          <OVRMenu />
+        <Col
+          className="px-0 d-flex justify-content-center"
+          style={{ backgroundColor: "#eceef0" }}
+        >
+          <OVRMenu setVr={setVr} />
         </Col>
         <Col className="col-8 px-0">
-          <OVRPreview />
+          {vr === "current" && <CurrentPreview />}
+          {vr === "upcoming" && <UpcomingPreview />}
         </Col>
       </Row>
     </Container>
