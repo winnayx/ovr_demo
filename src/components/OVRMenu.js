@@ -31,6 +31,7 @@ const OVRMenu = ({ setVr }) => {
         </ListGroup.Item>
         <ListGroup.Item
           style={{ backgroundColor: "#eceef0", cursor: "pointer" }}
+          disabled
         >
           Past Viewing Rooms
         </ListGroup.Item>

@@ -1,4 +1,5 @@
 import { Navbar, Nav } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 
 const Top = () => {
   return (
@@ -7,14 +8,14 @@ const Top = () => {
       style={{ background: "white" }}
       fixed="top"
     >
-      <Navbar.Brand href="#home">GALLERY NAME</Navbar.Brand>
+      <Navbar.Brand href="/">GALLERY NAME</Navbar.Brand>
       <Nav>
-        <Nav.Link href="#home">Artists</Nav.Link>
-        <Nav.Link href="#home">Exhibitions</Nav.Link>
-        <Nav.Link href="#home">Fairs</Nav.Link>
-        <Nav.Link href="#home">Viewing Rooms</Nav.Link>
-        <Nav.Link href="#home">News</Nav.Link>
-        <Nav.Link href="#home">Contact</Nav.Link>
+        <Nav.Link href="#artists">Artists</Nav.Link>
+        <Nav.Link href="#exhibitions">Exhibitions</Nav.Link>
+        <Nav.Link href="#fairs">Fairs</Nav.Link>
+        <Nav.Link href="/">Viewing Rooms</Nav.Link>
+        <Nav.Link href="#news">News</Nav.Link>
+        <Nav.Link href="#contact">Contact</Nav.Link>
       </Nav>
     </Navbar>
   );

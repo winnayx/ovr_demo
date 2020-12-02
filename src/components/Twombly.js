@@ -120,14 +120,27 @@ const Twombly = () => {
               Abstract Expressionists. He has pursued a form of painting that
               combines elements of gestural abstraction, drawing, and writing in
               a personal manner that is seemingly remote from the
-              media-saturated world of contemporary culture. Suffused with
-              references to poetry and the Mediterranean heritage that has
-              surrounded him since his move to Italy in 1957, Twombly’s art
-              bridges literary and painterly sensibilities, and links
-              contemporary art to a rich cultural past of antiquity and
-              Romanticism.
+              media-saturated world of contemporary culture.
             </p>
           </Col>
+        </Row>
+        <Row className="intro p-5 m-5">
+          <p style={{ letterSpacing: "2px" }}>
+            Suffused with references to poetry and the Mediterranean heritage
+            that has surrounded him since his move to Italy in 1957, Twombly’s
+            art bridges literary and painterly sensibilities, and links
+            contemporary art to a rich cultural past of antiquity and
+            Romanticism.
+            <br /> <br />
+            Twombly often responded to the violence of contemporary political
+            events with works that drew on classical history and literature. His
+            paintings of Achilles and Troy from the 1960s and 1970s, for
+            example, have frequently been interpreted as meditations on the
+            Vietnam War. In 2003, shortly after the US invasion of Iraq, the
+            then 75-year-old Twombly embarked upon what became known as his
+            Bacchus paintings, named for the Roman god of winemaking, fertility,
+            madness and religious ecstasy.
+          </p>
         </Row>
         <Row className="mb-5 d-flex justify-content-center">
           <Image className="px-5" src={bacchus} width="90%" alt="Bacchus" />
@@ -208,8 +221,8 @@ const Twombly = () => {
           </Button>
         </Row>
         <Row className="studio mb-5 d-flex justify-content-center">
-          <Image className="px-5" src={working1} width="50%" alt="working" />
-          <Image className="px-5" src={studio1} width="50%" alt="studio" />
+          <Image className="px-5" width="50%" src={working1} alt="working" />
+          <Image className="px-5" width="50%" src={studio1} alt="studio" />
         </Row>
         <Row className="quote p-5 mt-5 mx-5">
           <p style={{ letterSpacing: "2px" }}>
@@ -366,10 +379,10 @@ const Twombly = () => {
             </Button>
           </div>
         </Row>
-        <Row className="artwork mb-5 d-flex flex-column justify-content-center">
+        <Row className="outro my-5 pt-5">
           <Image
             src={gallery}
-            alt="Leda and Swan"
+            alt="schedule"
             fluid
             style={{ cursor: "pointer" }}
           />
