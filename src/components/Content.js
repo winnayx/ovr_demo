@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Switch, Route } from "react-router-dom";
 
 import OVRMenu from "./OVRMenu.js";
 import CurrentPreview from "./CurrentPreview.js";
@@ -17,7 +17,7 @@ const Content = () => {
             <Twombly />
           </Row>
         </Route>
-        <Route path="/">
+        <Route exact path="/">
           <Row>
             <Col
               className="px-0 d-flex justify-content-center"

@@ -1,4 +1,3 @@
-import "./Top.css";
 import { ListGroup, Button } from "react-bootstrap";
 
 const OVRMenu = ({ setVr }) => {

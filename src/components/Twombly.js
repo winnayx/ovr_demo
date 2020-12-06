@@ -72,6 +72,17 @@ const Twombly = () => {
             </Button>
           </div>
         </Row>
+        <Row className="kunstmatrix-exhibit">
+          <iframe
+            allowfullscreen="true"
+            title="kunstmatrix virtual exhibit"
+            frameborder="0"
+            scrolling="no"
+            src="https://art.kunstmatrix.com/apps/artspaces/index.html?external=true&splashscreen=true&language=en&uid=38107&exhibition=3665748"
+            width="100%"
+            height="600"
+          />
+        </Row>
         <Row className="carousel-sketches my-5 py-5">
           <Col className="col-8">
             <Carousel>
