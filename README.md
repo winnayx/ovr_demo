@@ -2,7 +2,7 @@
 
 ## Todo
 
-- [x] Incorporate the Kunstmatrix iframe
-- [x] Update Kunstmatrix exhibition
-- [ ] Send more emails on Monday
+- [x] Incorporate the kunstmatrix iframe
+- [x] Update kunstmatrix
+- [ ] Send more on Monday
 
