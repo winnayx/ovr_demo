@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import Top from "./components/Top.js";
 import Content from "./components/Content.js";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const App = () => {
   return (

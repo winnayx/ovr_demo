@@ -72,7 +72,25 @@ const Twombly = () => {
             </Button>
           </div>
         </Row>
-        <Row className="kunstmatrix-exhibit">
+        <Row className="intro p-5 m-5">
+          <p style={{ letterSpacing: "2px" }}>
+            Suffused with references to poetry and the Mediterranean heritage
+            that has surrounded him since his move to Italy in 1957, Twombly’s
+            art bridges literary and painterly sensibilities, and links
+            contemporary art to a rich cultural past of antiquity and
+            Romanticism.
+            <br /> <br />
+            Twombly often responded to the violence of contemporary political
+            events with works that drew on classical history and literature. His
+            paintings of Achilles and Troy from the 1960s and 1970s, for
+            example, have frequently been interpreted as meditations on the
+            Vietnam War. In 2003, shortly after the US invasion of Iraq, the
+            then 75-year-old Twombly embarked upon what became known as his
+            Bacchus paintings, named for the Roman god of winemaking, fertility,
+            madness and religious ecstasy.
+          </p>
+        </Row>
+        <Row className="pb-5 mb-5 kunstmatrix-exhibit">
           <iframe
             allowfullscreen="true"
             title="kunstmatrix virtual exhibit"
@@ -82,6 +100,89 @@ const Twombly = () => {
             width="100%"
             height="600"
           />
+        </Row>
+        <Row className="pt-5 my-5 d-flex justify-content-center">
+          <Image className="px-5" src={bacchus} width="100%" alt="Bacchus" />
+          <div
+            className="d-flex justify-content-between align-items-center px-5 mt-3"
+            style={{ width: "90%" }}
+          >
+            <div className="d-flex flex-column">
+              <p className="m-0" style={{ letterSpacing: "2px" }}>
+                Untitled (Bacchus)
+                <br />
+                Acrylic on canvas, 317.5 x 417.8
+                <br /> 2005
+              </p>
+            </div>
+            <Button
+              variant="outline-secondary"
+              style={{ height: "50px", width: "200px", letterSpacing: "2px" }}
+              onClick={() => setInquiry(true)}
+            >
+              Inquire
+            </Button>
+          </div>
+        </Row>
+        <Row className="artwork mb-5 d-flex justify-content-center">
+          <Image className="px-5" src={untitled} width="100%" alt="Bacchus" />
+          <div
+            className="d-flex justify-content-between align-items-center px-5 mt-3"
+            style={{ width: "90%" }}
+          >
+            <div className="d-flex flex-column">
+              <p className="m-0" style={{ letterSpacing: "2px" }}>
+                Untitled
+                <br />
+                Acrylic on canvas, 325.1 x 494
+                <br />
+                2005
+              </p>
+            </div>
+            <Button
+              variant="outline-secondary"
+              style={{ height: "50px", width: "200px", letterSpacing: "2px" }}
+              onClick={() => setInquiry(true)}
+            >
+              Inquire
+            </Button>
+          </div>
+        </Row>
+        <Row className="installation mb-5 d-flex justify-content-center">
+          <Image
+            className="px-5"
+            src={installation}
+            width="100%"
+            alt="Bacchus"
+          />
+        </Row>
+        <Row className="video px-5 mb-5">
+          <ResponsiveEmbed aspectRatio="16by9">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Z5_1m7MMXyE?start=11"
+              frameborder="0"
+              title="Cy Twombly at Tate Modern | TateShots"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+          </ResponsiveEmbed>
+        </Row>
+        <Row className="schedule my-5 py-5 d-flex align-items-center text-center flex-column">
+          <h4 className="mb-3" style={{ letterSpacing: "2px" }}>
+            See the presentation in person at GALLERY NAME on Via Ricasoli, 49
+          </h4>
+          <Button
+            variant="outline-secondary"
+            style={{ width: "40%", letterSpacing: "2px" }}
+            onClick={() => setInquiry(true)}
+          >
+            Schedule a Visit
+          </Button>
+        </Row>
+        <Row className="studio mb-5 d-flex justify-content-center">
+          <Image className="px-5" width="50%" src={working1} alt="working" />
+          <Image className="px-5" width="50%" src={studio1} alt="studio" />
         </Row>
         <Row className="carousel-sketches my-5 py-5">
           <Col className="col-8">
@@ -134,106 +235,6 @@ const Twombly = () => {
               media-saturated world of contemporary culture.
             </p>
           </Col>
-        </Row>
-        <Row className="intro p-5 m-5">
-          <p style={{ letterSpacing: "2px" }}>
-            Suffused with references to poetry and the Mediterranean heritage
-            that has surrounded him since his move to Italy in 1957, Twombly’s
-            art bridges literary and painterly sensibilities, and links
-            contemporary art to a rich cultural past of antiquity and
-            Romanticism.
-            <br /> <br />
-            Twombly often responded to the violence of contemporary political
-            events with works that drew on classical history and literature. His
-            paintings of Achilles and Troy from the 1960s and 1970s, for
-            example, have frequently been interpreted as meditations on the
-            Vietnam War. In 2003, shortly after the US invasion of Iraq, the
-            then 75-year-old Twombly embarked upon what became known as his
-            Bacchus paintings, named for the Roman god of winemaking, fertility,
-            madness and religious ecstasy.
-          </p>
-        </Row>
-        <Row className="mb-5 d-flex justify-content-center">
-          <Image className="px-5" src={bacchus} width="90%" alt="Bacchus" />
-          <div
-            className="d-flex justify-content-between align-items-center px-5 mt-3"
-            style={{ width: "90%" }}
-          >
-            <div className="d-flex flex-column">
-              <p className="m-0" style={{ letterSpacing: "2px" }}>
-                Untitled (Bacchus)
-                <br />
-                Acrylic on canvas, 317.5 x 417.8
-                <br /> 2005
-              </p>
-            </div>
-            <Button
-              variant="outline-secondary"
-              style={{ height: "50px", width: "200px", letterSpacing: "2px" }}
-              onClick={() => setInquiry(true)}
-            >
-              Inquire
-            </Button>
-          </div>
-        </Row>
-        <Row className="artwork mb-5 d-flex justify-content-center">
-          <Image className="px-5" src={untitled} width="90%" alt="Bacchus" />
-          <div
-            className="d-flex justify-content-between align-items-center px-5 mt-3"
-            style={{ width: "90%" }}
-          >
-            <div className="d-flex flex-column">
-              <p className="m-0" style={{ letterSpacing: "2px" }}>
-                Untitled
-                <br />
-                Acrylic on canvas, 325.1 x 494
-                <br />
-                2005
-              </p>
-            </div>
-            <Button
-              variant="outline-secondary"
-              style={{ height: "50px", width: "200px", letterSpacing: "2px" }}
-              onClick={() => setInquiry(true)}
-            >
-              Inquire
-            </Button>
-          </div>
-        </Row>
-        <Row className="installation mb-5 d-flex justify-content-center">
-          <Image
-            className="px-5"
-            src={installation}
-            width="100%"
-            alt="Bacchus"
-          />
-        </Row>
-        <Row className="video px-5 mb-5">
-          <ResponsiveEmbed aspectRatio="16by9">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/Z5_1m7MMXyE?start=11"
-              frameborder="0"
-              title="Cy Twombly at Tate Modern | TateShots"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            ></iframe>
-          </ResponsiveEmbed>
-        </Row>
-        <Row className="schedule my-5 py-5 d-flex align-items-center text-center flex-column">
-          <h4 className="mb-3" style={{ letterSpacing: "2px" }}>
-            See the presentation in person at GALLERY NAME on Via Ricasoli, 49
-          </h4>
-          <Button
-            variant="outline-secondary"
-            style={{ width: "40%", letterSpacing: "2px" }}
-          >
-            Schedule a Visit
-          </Button>
-        </Row>
-        <Row className="studio mb-5 d-flex justify-content-center">
-          <Image className="px-5" width="50%" src={working1} alt="working" />
-          <Image className="px-5" width="50%" src={studio1} alt="studio" />
         </Row>
         <Row className="quote p-5 mt-5 mx-5">
           <p style={{ letterSpacing: "2px" }}>

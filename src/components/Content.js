@@ -13,9 +13,7 @@ const Content = () => {
     <Container className="p-0">
       <Switch>
         <Route path="/twombly">
-          <Row>
-            <Twombly />
-          </Row>
+          <Twombly />
         </Route>
         <Route exact path="/">
           <Row>
